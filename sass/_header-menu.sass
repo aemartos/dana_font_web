@@ -1,0 +1,193 @@
+
+
+/*----------------------------HEADER + MENU--------------------------*/
+
+header.main_header
+  background-color: $main-color
+  .nav_line
+    @include box-shadow(0px 1px 0px 0px #fc7a7a)
+    border-bottom: 1px solid #e14747
+    display: flex
+    justify-content: center
+    &.no_line
+      border-bottom: 0
+    nav.main_nav
+      width: 70%
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .main_logo
+        font-family: 'dana-expanded'
+        padding-right: .8em
+        font-size: 1.4em
+        color: white
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15)
+        a
+          color: white
+      .main_menu
+        a 
+          color: rgba(255,255,255,.7)
+          /*&.active:hover
+            color: rgba(255,255,255,.7)*/
+          &:hover
+            color: rgba(255,255,255,1)
+        ul.main_menu_list
+          display: flex
+          li
+            padding: 1em
+            &.active
+              background-color: #e95252
+            &.active:hover
+              color: white
+          a.active
+            color: white
+
+  .background_header
+    background-image: url(../img/texture01op5bg100.png) 
+    .header_content
+      width: 70%
+      margin: 0 auto !important
+      .header_content_title
+        color: white
+        //text-shadow: #e14747 -1px 1px, #e14747 -2px 2px, #e14747 -3px 3px
+      .header_content_subtitle
+        color: white
+        padding-bottom: 3em
+        line-height: 1.2em
+        font-size: 1.3em
+      .header_dana
+        text-align: center
+        fill: white
+        padding-top: 10em
+        .separate
+          display: inline
+        @media (max-width: 668px)
+          .d32
+            display: none 
+          .separate
+            display: block
+          svg
+            margin-left: -6em
+      .header_dana_text
+        width: 65%
+        margin: -1.5em auto
+        text-align: center
+        color: white
+        padding-bottom: 3em
+        line-height: 1.2em
+        font-size: 1.3em
+      .header_dana_subtitle
+        text-align: center
+        color: white
+        padding-bottom: 2em
+        font-size: 1.7em
+        font-weight: 400
+        //text-shadow: #e14747 -1px 1px, #e14747 -2px 2px, #e14747 -3px 3px
+      .header_button_home
+        text-align: center
+        padding-bottom: 5em
+
+@media (max-width: 668px)
+
+  header.main_header
+    .nav_line
+      nav.main_nav
+        width: 80%
+    .background_header
+      .header_content
+        width: 80%
+        text-align: center
+
+@media (max-width: 320px)
+
+  header.main_header
+    .nav_line
+      nav.main_nav
+        .main_logo
+          font-size: 1.2em
+
+/*----------------------------RESPONSIVE MENU--------------------------*/      
+
+.topnav 
+  position: relative
+
+.menu_desktop 
+  display: block
+
+  a.icon 
+    display: none !important
+
+.menu_responsive 
+  display: none
+
+  .menu_responsive_toggle
+    position: flex
+    font-size: 1.6em
+    color: white
+    text-shadow: -1px 2px 1px #d94646
+    cursor: pointer
+    opacity: .8
+    transition: opacity 350ms ease
+    &:hover 
+      opacity: 1
+      transition: opacity 350ms ease
+
+.menu_responsive_content 
+  position: fixed
+  top: 0
+  left: 0
+  width: 70%
+  max-width: 250px
+  height: 100%
+  background-color: rgba(255, 255, 255, 0.94)
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.26)
+  padding: 1em
+  transform: translateX(-100%)
+  transition: all 500ms ease
+  opacity: 0
+
+  &.opened  
+    transform: translateX(0%)
+    transition: all 500ms ease
+    opacity: 1
+    z-index: 1000
+
+  ul 
+    li 
+      color: #444
+      padding: 0.1em 0
+
+      &.active 
+        color: white
+        background-color: #e95252
+        border-radius: 3px
+      a 
+        color: inherit
+        padding: 0.5em
+        display: block
+        border-radius: 3px
+        opacity: 1
+
+@media screen and (max-width: 1380px) 
+  .menu_desktop 
+    display: none !important
+
+  .menu_responsive 
+    display: block 
+    padding: 1em
+
+@media screen and (max-width: 1340px)
+
+  .menu_desktop 
+    display: block
+
+    &.inline_list.list_right 
+      float: none
+      text-align: left
+      li 
+        margin: 10px 10px 10px 0
+        a 
+          padding: 0
+
+
+

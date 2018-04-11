@@ -1,0 +1,48 @@
+
+
+/*----------------------------FOOTER--------------------------*/
+
+.site
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+
+.content
+  flex: 1
+
+.sticky_footer
+  background-color: $main-color
+  padding: 3em
+  color: rgba(255,255,255,1)
+  a 
+    color: rgba(255,255,255,.7)
+    &:hover
+      color: rgba(255,255,255,1)
+  .sm_footer_list
+    display: flex 
+    justify-content: center
+    li
+      padding-right: 1em
+      padding-bottom: 1em
+      &:last-child
+        padding-right: 0
+  
+  p.copyright_text
+    text-align: center
+    font-weight: 100
+    line-height: 1.25em
+  
+  .footer_logo
+    font-family: 'dana-expanded'
+    padding-right: .8em
+    color: rgba(255,255,255,.7)
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15)
+  
+  .footer_logo:hover
+    color: rgba(255,255,255,1)
+
+
+@media (max-width: 320px)
+
+  .sticky_footer
+    font-size: .8em

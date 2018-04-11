@@ -1,0 +1,318 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto+Slab:100,300,400,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=latin-ext')
+
+@mixin transform ($value) 
+  -webkit-transform: $value
+  -moz-transform: $value
+  -ms-transform: $value
+  -o-transform: $value
+  transform: $value
+
+
+@mixin transition ($value) 
+  transition: $value
+  -webkit-transition: $value
+  -moz-transition: $value
+  -ms-transition: $value
+  -o-transition: $value
+
+@mixin box-shadow ($value)
+  -webkit-box-shadow: $value
+  -moz-box-shadow: $value
+  box-shadow: $value
+
+@mixin border-radius ($value)
+  -webkit-border-radius: $value
+  -moz-border-radius: $value
+  -ms-border-radius: $value
+  border-radius: $value
+
+
+
+
+$verylightgrey: #f5f5f5
+$lightgrey: #f7f7f9
+$grey: #efefef
+$mediumgrey: #e1e1e8
+$darkgrey: #30353f
+
+$pink: #e95063
+$green: #9ab998
+
+$main-color: #ff5252
+
+
+
+/*---------------------------GENERAL-ADJUSTMENTS----------------------*/
+
+*, *::after, *::before 
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -ms-box-sizing: border-box
+  -o-box-sizing: border-box
+  box-sizing: border-box
+
+body 
+  font-family: 'Roboto', sans-serif
+  font-size: 14px
+  color: $darkgrey
+
+.example_div
+  padding: 0 20px
+  margin: 5px 0
+
+.color_example
+  border-radius: .2em
+  font-weight: 300
+  &.container_grid
+    padding: 10px 10px 40px 10px
+
+.dib 
+  display: inline-block
+
+span.textd 
+  margin: -20px 0 0 75px
+  position: absolute
+
+ul
+  list-style-type: none
+
+a 
+  display: inline-block
+  text-decoration: none
+  font-weight: 500
+  color: rgba(255,82,82,.7)
+  &:hover
+    color: rgba(255,82,82,1)
+
+.no_shadow
+  box-shadow: none !important
+
+.no_border
+  border: 0 !important
+
+.mtop
+  margin-top: .7em
+
+.no_pbottom
+  padding-bottom: 0
+
+
+/*----------------------------BUTTONS--------------------------*/
+
+.button_main
+  padding: .6em 1.4em
+  border-radius: .2em
+  font-weight: 400
+  font-size: 1.3em
+  color: white
+  border: .1em solid white
+  background-color: $main_color
+  @include box-shadow (inset 6px 6px 3px -4px rgba(225,71,71,0.87))
+  @include transition(all .2s ease)
+  &:hover
+    color: $main_color
+    background-color: white
+    @include box-shadow (none)
+    @include transform(scale(1.05,1.05))
+    @include transition(all .2s ease)
+
+
+.button_secondary
+  padding: .6em 1.4em
+  border-radius: .2em
+  font-weight: 500
+  font-size: 1.1em
+  color: white
+  border: .1em solid $main_color
+  background-color: $main_color
+  @include transition(all .2s ease)
+  &:hover
+    background-color: white
+    color: $main_color
+    @include transform(scale(1.05,1.05))
+    @include transition(all .2s ease)
+
+
+
+/*---------------------------TEXT-------------------------*/
+
+h1
+  font-size: 3.5em
+  font-weight: 900
+  padding: 1.2em 0 .5em 0
+
+h2
+  font-size: 2.15em
+  font-weight: 700
+  padding: 1.1em 0 1em 0
+  
+h3 
+  font-size: 1.8em
+  font-weight: 700
+  //padding: 1em 0 .9em 0
+
+h4
+  font-size: 1.4em
+  font-weight: 500 
+ 
+.title_text
+  margin-top: 1em
+  padding-bottom: .4em
+  border-bottom: 1px solid #eee
+
+.subtitle_text
+  font-size: 1.3em
+  font-weight: 300
+  padding: 1.2em 0 1.3em
+  line-height: 1.3em
+  &.explanation
+    font-weight: 400
+    padding: .4em 0 .2em
+
+.subtitles_texts
+  font-size: 1.3em
+  font-weight: 300
+  padding: .5em 0 0 
+  line-height: 1.3em
+
+.mini-title_text
+  padding-bottom: .2em
+  border-bottom: 1px solid #eee
+
+.paragraph_text
+  font-size: 1.1em
+  font-weight: 400
+  padding: .3em 0
+  line-height: 1.15em
+
+.blockquote
+  font-size: 1.3em
+  font-weight: 300
+  border-left: .07em solid grey
+  padding-left: .5em
+  //margin-left: 2em
+  margin: .5em 0 1em 2em
+
+.puntual-text
+  font-size: 1.1em
+  font-family: 'Roboto Slab', serif
+  line-height: 1.2em
+  padding-top: 1em
+
+.alien-text
+  font-size: 8em
+  text-align: center
+  word-break: break-all
+
+.highlighted-text
+  font-size: 1.3em
+  font-weight: 700
+
+.icon-text, .fa.icon-text
+  font-size: 6em
+  color: $main_color
+
+.color_text
+  color: $main_color
+
+.p05
+  padding-top: .5em !important
+
+@media (max-width: 668px)
+  .title_text
+    text-align: center
+  .subtitle_text
+    text-align: center
+
+/*---------------------------CODE-LANGUAGE----------------------*/
+
+.language_html
+  width: 100%
+  background-color: $lightgrey
+  border: .1em solid $mediumgrey
+  margin-top: 1em
+  padding: 1.5em
+  @include border-radius(3px)
+  font-family: 'Roboto Slab', serif
+  display: inline-block
+  vertical-align: top
+
+.sign 
+  color: $green
+
+.text 
+  color: black
+
+.class 
+  color: blue
+
+.type 
+  color: $pink
+
+
+/*---------------------------IMG----------------------*/
+
+img 
+  width: 100%
+  height: auto
+  
+
+/*---------------------------VIDEOS----------------------*/
+
+.responsive_video 
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 30px
+  height: 0
+  overflow: hidden
+ 
+.responsive_video iframe,
+.responsive_video object,
+.responsive_video embed 
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+
+/*----------------------------DOWNLOAD-START--------------------------*/  
+
+.download-start
+  width: 100%
+  margin: 0 auto
+  background-color: $lightgrey
+  color: lighten($darkgrey, 40%)
+  border: .1em solid $mediumgrey
+  padding: 2em 4.5em
+  border-radius: .2em
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .download-start-item
+    .star-item-title
+      //font-family: 'dana-expanded'
+      margin-bottom: .3em
+    .star-item-text
+      font-size: 1.1em
+  .button_secondary
+    padding: 1em 1.4em
+    border-radius: .3em
+
+
+@media screen and (max-width: 899px)
+
+  .download-start
+    flex-wrap: wrap
+    justify-content: center
+    text-align: center
+    padding: 1.5em
+    .download-start-item
+      width: 100%
+    .button_secondary
+      padding: .6em 1.4em
+      margin-top: 1em
+
+

@@ -1,0 +1,120 @@
+
+
+/*----------------------------PROJECT--------------------------*/
+
+.content-project
+  h2
+    &.title_text
+      margin-top: 1em
+  .title_text
+    margin-top: 2em
+  .title_letters, .title_font
+    padding-top: 0
+  .subtitle_text_project
+    padding-top: 0
+  .paragraph_text
+    padding-top: 1.5em
+  .img_project
+    margin: 2em auto
+    &.img_lettershapes 
+      width: 60%
+    &.img_DIV
+      width: 40%
+    &.img_letter_a
+      width: 20%
+      margin: 0 2em 0 0
+  .gif_transformation
+    margin-top: 2em
+  .letter_animation
+    display: flex
+    flex-flow: row nowrap
+    justify-content: center
+    align-items: flex-start
+    margin: 2em 0
+    .img_a_transformation
+      margin-right: 7%
+    .gif_a_transformation
+      width: 15.55em
+  .div_project_explain
+    display: flex
+    flex-flow: row nowrap
+    .languaje_project
+      text-align: center
+      font-size: 1.1em
+      height: 4em
+      //width: 59%
+      margin-left: 1em
+      border: 0.05em solid #e1e1e8
+  .nomenclature_project
+    display: flex
+    flex-flow: row nowrap
+    justify-content: center
+    align-items: center
+    margin-top: 2em
+    .language-markup
+      width: 70%
+  .download-start
+    margin-top: 4em
+
+
+@media screen and (max-width: 1024px)
+  
+  .content-project
+    .div_project_explain
+      flex-flow: column nowrap
+      justify-content: center
+      align-items: center
+      .languaje_project
+        width: 50%
+
+
+@media screen and (max-width: 899px)
+
+  .content-project
+    .img_project
+      &.img_lettershapes 
+        width: 100%
+      &.img_DIV
+        width: 60%
+      &.img_letter_a
+        width: 29%
+    .nomenclature_project
+      .language-markup
+        width: 60%
+        font-size: 0.7em
+    .div_project_explain
+      flex-flow: column nowrap
+      justify-content: center
+      align-items: center
+
+
+@media (max-width: 668px)
+
+
+  .content-project
+    .paragraph_text
+      text-align: center
+    .img_project
+      &.img_letter_a
+        width: 60%
+        margin-right: 0
+        margin-bottom: 1em
+    .letter_animation
+      flex-flow: row wrap
+      .img_a_transformation
+        margin-right: 0
+        margin-bottom: 1em
+    .nomenclature_project
+      flex-flow: row wrap
+      .language-markup
+        width: 100%
+        font-size: 0.7em
+    .div_project_explain
+      .languaje_project
+        width: auto
+    .download-start
+      margin-top: 2em
+
+
+
+

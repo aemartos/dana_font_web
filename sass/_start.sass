@@ -1,0 +1,49 @@
+
+
+/*----------------------------GET-STARTING--------------------------*/
+
+.content.content-start
+  svg
+    margin-top: 8em
+  .paragraph_text
+    padding-top: 1.5em
+  .mini-title_text
+    padding-top: 1em
+  .download-start
+    width: 100%
+    margin: 0 auto
+    background-color: $lightgrey
+    color: lighten($darkgrey, 40%)
+    border: .1em solid $mediumgrey
+    padding: 2em 4.5em
+    border-radius: .2em
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .download-start-item
+      .star-item-title
+        //font-family: 'dana-expanded'
+        margin-bottom: .3em
+      .star-item-text
+        font-size: 1.1em
+    .button_secondary
+      padding: 1em 1.4em
+      border-radius: .3em
+
+
+@media screen and (max-width: 899px)
+
+  .content.content-start
+    .download-start
+      flex-wrap: wrap
+      justify-content: center
+      text-align: center
+      padding: 1.5em
+      .download-start-item
+        width: 100%
+      .button_secondary
+        padding: .6em 1.4em
+        margin-top: 1em
+    .dana_example_start
+      margin-top: 1.2em
+

@@ -1,0 +1,82 @@
+
+
+/*----------------------------PAGES-CONTENT--------------------------*/
+
+.content
+  width: 70%
+  margin: 0 auto
+  padding-bottom: 4em
+
+@media (max-width: 668px)
+  
+  .content
+    width: 80%
+
+
+/*--------------------------------HOME------------------------------*/
+
+.content.content-home
+  .masonry-items
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 90%
+    margin: 0 auto
+    padding: 1em 0 4em
+    
+    .masonry-item
+      width: 29%
+      margin: 1em
+      text-align: center
+  
+  .gif_movement_home
+    border: 0.05em solid #eee
+    margin-bottom: 2em
+
+  .home-video
+    margin-bottom: 0em
+  
+  .thanksto
+    font-size: .9em
+    line-height: 1.2em
+    h3
+      padding-bottom: .5em
+      &.thanks-title    
+        border-bottom: 1px solid #eee
+        margin-bottom: 1em
+    .thanks-columns
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      .thanks-column
+        width: 32%
+
+@media screen and (max-width: 1024px)
+  
+  .content.content-home
+    .masonry-items
+      .masonry-item
+        width: 43%
+
+@media screen and (max-width: 899px)
+
+  .content.content-home
+    .masonry-items
+      .masonry-item
+        width: 43%
+    .thanksto
+      .thanks-columns
+        .thanks-column
+          width: 100%
+          margin-bottom: 1.5em
+
+@media (max-width: 668px)
+  
+  .content.content-home
+    .masonry-items
+      .masonry-item
+        width: 100%
+        margin-bottom: 2em
+
+  
+

@@ -1,0 +1,112 @@
+
+
+/*----------------------------FORMS--------------------------*/
+
+form 
+  width: 100%
+  background-color: rgba(220, 92, 92, 0.15)
+  padding: 20px
+  @include border-radius(3px)
+
+  label 
+    display: block
+    font-size: 16px
+    font-weight: 700
+    color: #ff5252
+    padding: 10px 0
+
+  input 
+    &.input_text 
+      width: 100%
+      padding: 6px
+      @include border-radius(3px)
+      &.input_text_inline 
+        width: 70%
+        padding: 12px
+
+    &.input_submit
+      display: inline-block
+      background-color: rgba(255, 82, 82, 1)
+      border: .1em solid $main_color
+      color: white
+      font-weight: 500
+      font-size: 16px
+      padding: 10px 20px
+      @include border-radius(3px)
+      &:hover 
+        background-color: white
+        color: $main_color
+    
+    &.flexsearch--submit 
+      background-color: white
+      position: absolute
+      margin-top: -34px!important
+      margin-left: -37px
+      font-size: 20px
+
+    &.flexsearch--submit:hover 
+      color: #ff5252
+
+  select 
+    width: 100%
+    height: 2em
+    //padding: 6px
+
+  .form_textarea 
+    width: 100%
+    padding: 6px
+    @include border-radius(3px)
+
+  .form_input_text 
+    &.form_input_text_inline 
+      display: inline
+      color: gray
+
+  .form_input_submit 
+    margin-top: 3em
+    &.form_input_submit_inline 
+      display: inline
+
+  .input_info 
+    color: rgba(255,82,82,.7)
+    padding: 5px 0
+    font-style: italic
+    font-size: 12px
+  
+  .drop_area_main
+    input
+      display: none
+    .drop_area
+      color: rgba(255,82,82,.8)
+      width: 100%
+      border: 3px dashed #ff5252
+      @include border-radius(3px)
+      text-align: center
+      height: 200px
+      color: rgba(255,82,82,.7)
+      .icon_file
+        font-size: 4.5em
+        margin-top: .8em
+      label
+        color: rgba(255,82,82,.8)
+        cursor: pointer
+
+input, select, textarea 
+  border: 0
+  outline: 0
+
+
+@media (max-width: 667px)
+  .mtop
+    margin-top: .4em
+
+  form
+    font-size: .9em
+    label
+      font-size: 1.1em
+    .form_input_submit
+      display: flex
+      justify-content: center
+      margin-top: 1em
+
+

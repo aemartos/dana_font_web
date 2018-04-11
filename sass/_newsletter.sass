@@ -1,0 +1,67 @@
+
+
+/*----------------------------NEWSLETTER--------------------------*/
+
+
+.newsletter
+  background-color: $verylightgrey
+  .newsletter_content
+    width: 70%
+    margin: 0 auto
+    padding: 2em 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .newsletter_text
+      color: gray
+      .newsletter_subtitle
+        padding-top: .3em
+    .newsletter_mail
+      display: flex
+      align-items: center
+      flex-grow: 1
+      justify-content: flex-end
+      .form_input_text
+        width: 70%
+        margin: 0 1em
+        .write_email
+          width: 100%
+          padding: .9em 1.7em
+          border-radius: 3px
+
+
+@media (max-width: 1024px)
+
+  .newsletter
+    .newsletter_content
+      flex-wrap: wrap
+      justify-content: center
+      .newsletter_mail
+        padding-top: 1em
+
+
+@media (max-width: 668px)
+
+  .newsletter
+    .newsletter_content
+      text-align: center
+      width: 80%
+      .newsletter_mail
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        .form_input_text
+          .write_email
+            width: 100%
+
+
+@media (max-width: 469px)
+
+  .newsletter
+    .newsletter_content
+      .newsletter_mail
+        .form_input_submit
+          margin-top: 1em
+
+
+
