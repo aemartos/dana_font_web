@@ -1,0 +1,235 @@
+.nohtml_scroll
+  overflow: hidden
+
+.site_demo
+  background-color: $main-color + DD
+  height: 100vh
+  overflow: hidden
+  .content
+    &.c_demo
+      width: 100%
+      padding-bottom: 0
+      .demo_header
+        display: flex
+        flex-flow: row nowrap
+        align-items: center
+        justify-content: space-between
+        .form_input_demo
+          width: 90%
+          background-color: #eee
+          height: 6em
+          input
+            color: $main-color
+            font-size: 2em
+            padding: .85em
+            width: 100%
+            background: transparent
+        .change
+          width: 5%
+          height: 6em
+          background-color: white
+          display: flex
+          flex-flow: row nowrap
+          align-items: center
+          justify-content: center
+          cursor: pointer
+          span
+            color: $main-color
+            font-size: 3em
+          .change_bcolor
+          .change_tcolor
+
+      .content_demo
+        width: 100%
+        height: calc(98vh - 6em)
+        margin: .8em auto
+        #resizable
+          position: absolute
+          left: .6em
+          width: 99%
+          height: calc(98vh - 6em)
+          margin: auto
+          #iframe
+            // pointer-events: none
+            border: 1px solid white
+          .nav-square
+            position: absolute
+            width: .7em
+            height: .7em
+            border: 1px solid white
+            background-color: $main-color
+            &.nav-top
+              top: -.35em
+              left: calc(50% - .35em)
+            &.nav-right
+              top: calc(50% - .35em)
+              right: -.35em
+            &.nav-bottom
+              left: calc(50% - .35em)
+              bottom: -.35em
+            &.nav-left
+              top: calc(50% - .35em)
+              left: -.35em
+          .drag-handle
+            position: absolute
+            text-align: center
+            vertical-align: middle
+            line-height: 2em
+            font-size: 1.5em
+            width: 2em
+            height: 2em
+            color: white           
+      .button_back_btn
+        display: inline
+        position: absolute
+        //bottom: -.35em
+        //right: 0
+        bottom: .5em
+        right: .6em
+        //border-radius: 50%
+        padding: .8em .9em
+        background-color: white
+        @include transition(all .2s ease)
+        cursor: pointer
+        span
+          color: $main-color
+          font-size: 1.3em
+        &:hover
+          opacity: .8
+          @include transform (scale(1.2))
+          @include transition(all .2s ease)
+
+
+
+//----------SCROLLBAR ADJUSTMENTS------------
+
+#custom_scroll
+  &::-webkit-scrollbar
+    width: .5em
+    margin-right: -.5em
+    height: .5em
+
+  &::-webkit-scrollbar-track
+    background: transparent
+
+  &::-webkit-scrollbar-thumb
+    background-color: white
+    outline: 0
+    border-radius: 5em
+
+  &::-webkit-scrollbar-thumb:hover
+    background-color: rgba(255,255,255,.8)
+
+
+
+.demo_content
+  background-color: $main-color
+  .content
+    &.content_demoo
+      width: 90%
+    .dana_test_input_content
+      fill: white
+      padding-top: 6em
+      margin-left: -3em
+
+
+
+@media (max-width: 1366px)
+  
+  .site_demo
+    .content
+      &.c_demo
+        .demo_header
+          .form_input_demo
+            width: 86%
+          .change
+            width: 7%
+        .button_back_btn
+          right: .5em
+
+
+@media (max-width: 1024px)
+
+  .site_demo
+    .content
+      &.c_demo
+        .demo_header
+          .form_input_demo
+            width: 84%
+            height: 5em
+            input
+              font-size: 1.6em
+              padding: .85em
+          .change
+            width: 8%
+            height: 5em
+        .content_demo
+          height: calc(98vh - 5em)
+          #resizable
+            height: calc(98vh - 5em)
+        .button_back_btn
+          right: .4em
+ 
+
+
+@media (max-width: 768px)
+  
+  .site_demo
+    .content
+      &.c_demo
+        .demo_header
+          .form_input_demo
+            width: 82%
+            input
+              font-size: 1.2em
+              padding: 1.4em 1em
+          .change
+            width: 9%
+        .content_demo
+          margin: .6em auto
+          height: calc(98vh - 5em)
+          #resizable
+            width: 97%
+            height: calc(98vh - 5em)
+        .button_back_btn
+          padding: .5em
+          right: .8em
+          bottom: .7em
+          span
+            font-size: 1em
+
+  .demo_content
+    .content
+      &.content_demoo
+        width: 80%
+
+@media (max-width: 480px)
+  
+  .site_demo
+    .content
+      &.c_demo
+        .demo_header
+          .form_input_demo
+            width: 68%
+            input
+              font-size: 1em
+              padding: 1.9em 1em
+          .change
+            width: 16%
+        .content_demo
+          margin: .6em auto
+          height: calc(98vh - 5em)
+          #resizable
+            width: 97%
+            height: calc(98vh - 5em)
+        .button_back_btn
+          right: .6em
+          bottom: .7em
+
+  .demo_content
+    .content
+      &.content_demoo
+        width: 60%
+
+
+

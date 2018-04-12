@@ -1,5 +1,79 @@
 
 
+// ---------- MAIN_MENU --------------
+
+var logo = $('.main_logo');
+var logo_content = $('<a class="" href="index.html">A dana 2.0</a>');
+
+logo.append(logo_content);
+
+var menu = $('#myTopnav');
+
+let url = window.location.href.split('/');
+let section = url[url.length-1];
+let suffix = '.html' // en web '';
+
+var menu_content = $('\
+  <ul class="main_menu_list menu_desktop">\
+  <li class="'+((section === ('index' + suffix)) ? 'active':'')+'"><a class="" href="index.html">Home</a></li>\
+  <li class="'+((section === ('project' + suffix)) ? 'active':'')+'"><a class="" href="project.html">Project</a></li>\
+  <li class="'+((section === ('start' + suffix)) ? 'active':'')+'"><a class="" href="start.html">Get Started</a></li>\
+  <li class="'+((section === ('library' + suffix)) ? 'active':'')+'"><a class="" href="library.html">Library</a></li>\
+  <li class="'+((section === ('demo' + suffix)) ? 'active':'')+'"><a class="" href="demo.html">Demo</a></li>\
+  <!--<li class="'+((section === ('tryit' + suffix)) ? 'active':'')+'"><a class="" href="tryit.html">Try it</a></li>-->\
+  <li class="'+((section === ('font' + suffix)) ? 'active':'')+'"><a class="" href="font.html">Font Version</a></li>\
+  <li class="'+((section === ('license' + suffix)) ? 'active':'')+'"><a class="" href="license.html">License</a></li>\
+  <li class="'+((section === ('contact' + suffix)) ? 'active':'')+'"><a class="" href="contact.html">Contact</a></li>\
+    <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>\
+  </ul>\
+');
+
+menu.append(menu_content);
+
+
+var menuResponsive = $('#myResponsiveTopnav');
+
+
+var menu_Responsive_content = $('\
+  <ul class="menu_mobile">\
+  <li class="'+((section === ('index' + suffix)) ? 'active':'')+'"><a class="" href="index.html">Home</a></li>\
+  <li class="'+((section === ('project' + suffix)) ? 'active':'')+'"><a class="" href="project.html">Project</a></li>\
+  <li class="'+((section === ('start' + suffix)) ? 'active':'')+'"><a class="" href="start.html">Get Started</a></li>\
+  <li class="'+((section === ('library' + suffix)) ? 'active':'')+'"><a class="" href="library.html">Library</a></li>\
+  <li class="'+((section === ('demo' + suffix)) ? 'active':'')+'"><a class="" href="demo.html">Demo</a></li>\
+  <!--<li class="'+((section === ('tryit' + suffix)) ? 'active':'')+'"><a class="" href="tryit.html">Try it</a></li>-->\
+  <li class="'+((section === ('font' + suffix)) ? 'active':'')+'"><a class="" href="font.html">Font Version</a></li>\
+  <li class="'+((section === ('license' + suffix)) ? 'active':'')+'"><a class="" href="license.html">License</a></li>\
+  <li class="'+((section === ('contact' + suffix)) ? 'active':'')+'"><a class="" href="contact.html">Contact</a></li>\
+  </ul>\
+');
+
+menuResponsive.append(menu_Responsive_content);
+
+
+// ---------- FOOTER --------------
+
+var footer = $('.sticky_footer');
+var footer_content = $('\
+    <div class="sm_footer">\
+        <ul class="sm_footer_list">\
+            <li class=""><a class="" href="#"><span class="fa fa-facebook-official" target="_blank"></span> Facebook</a></li>\
+            <li class="">&#8226;</li>\
+            <li class=""><a href="#"><span class="fa fa-twitter" target="_blank"></span> Twitter</a></li>\
+            <li class="">&#8226;</li>\
+            <li class=""><a href="https://github.com/aemartos/dana_font" target="_blank"><span class="fa fa-github"></span> GitHub</a></li>\
+        </ul>\
+    </div>\
+    <div class="copyright">\
+        <p class="copyright_text"><a class="footer_logo" href="index.html">A dana 2.0 &#8226;</a> Design with lots of love, glitter and alien blood, by <a href="http://www.anaestrada.es" target="_blank">Ana Estrada</a> as a end-of-degree project. © 2017</p>\
+    </div>\
+  ');
+
+footer.append(footer_content);
+
+
+// -----------------------------
+
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -8,6 +82,35 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+
+
+// ------------- RELOAD 5MIN WITHOUT INTERACT ------------
+
+/*var userInteract = false;
+
+document.addEventListener('mousemove', function(e){
+  userInteract = true;
+});
+
+document.addEventListener('keydown', function(e){
+  userInteract = true;
+});
+
+setInterval(function() {
+  let loc = (window.location.href.split('/'));
+  loc = loc[loc.length -1];
+  if (!userInteract && loc !== 'demo.html') {
+    refresh();
+  }
+  userInteract = false;
+
+}, 5 * 60000);
+
+function refresh() {
+  window.location.reload(true);
+  window.location.href = "demo.html";
+}*/
 
 
 
