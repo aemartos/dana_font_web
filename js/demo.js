@@ -98,7 +98,7 @@ var receiver = document.getElementById('iframe').contentWindow;
       $('.site_demo').css('background-color', msg.content+'DD');
       $('.nav-square').css('background-color', msg.content);
       $('.button_back_btn span').css('color', msg.content);
-
+      $('input').css('color', msg.content);
     }
     
 

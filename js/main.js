@@ -3,7 +3,7 @@
 // ---------- MAIN_MENU --------------
 
 var logo = $('.main_logo');
-var logo_content = $('<a class="" href="index.html">A dana 2.0</a>');
+var logo_content = $('<a class="" href="index.html">A dana font</a>');
 
 logo.append(logo_content);
 
@@ -65,7 +65,7 @@ var footer_content = $('\
         </ul>\
     </div>\
     <div class="copyright">\
-        <p class="copyright_text"><a class="footer_logo" href="index.html">A dana 2.0 &#8226;</a> Design with lots of love, glitter and alien blood, by <a href="http://www.anaestrada.es" target="_blank">Ana Estrada</a> as a end-of-degree project. © 2017</p>\
+        <p class="copyright_text"><a class="footer_logo" href="index.html">A dana font &#8226;</a> Design with lots of love, glitter and alien blood, by <a href="#">Ana Estrada</a> as a end-of-degree project. © 2017</p>\
     </div>\
   ');
 
