@@ -57,11 +57,11 @@ var footer = $('.sticky_footer');
 var footer_content = $('\
     <div class="sm_footer">\
         <ul class="sm_footer_list">\
-            <li class=""><a class="" href="https://www.linkedin.com/in/aemartos/" target="_blank"><span class="fa fa-linkedin" target="_blank"></span> LinkedIn</a></li>\
-            <li class="">&#8226;</li>\
-            <li class=""><a href="https://twitter.com/aemartos" target="_blank"><span class="fa fa-twitter" target="_blank"></span> Twitter</a></li>\
-            <li class="">&#8226;</li>\
-            <li class=""><a href="https://github.com/aemartos/dana_font" target="_blank"><span class="fa fa-github"></span> GitHub</a></li>\
+          <li class=""><a href="https://github.com/aemartos/dana_font" target="_blank"><span class="fa fa-github"></span> GitHub</a></li>\
+          <li class="">&#8226;</li>\
+          <li class=""><a class="" href="https://www.linkedin.com/in/aemartos/" target="_blank"><span class="fa fa-linkedin-square" target="_blank"></span> LinkedIn</a></li>\
+          <li class="">&#8226;</li>\
+          <li class=""><a href="https://twitter.com/aemartos" target="_blank"><span class="fa fa-twitter" target="_blank"></span> Twitter</a></li>\
         </ul>\
     </div>\
     <div class="copyright">\
