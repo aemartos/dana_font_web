@@ -55,18 +55,22 @@ menuResponsive.append(menu_Responsive_content);
 
 var footer = $('.sticky_footer');
 var footer_content = $('\
+    <div class="copyright">\
+        <p class="copyright_text"><a class="footer_logo" href="index.html">A dana font &#8226;</a> Design with lots of love, glitter and alien blood, by <a href="http://www.anaestrada.es/" target="_blank">Ana Estrada</a> as a end-of-degree project. © 2018</p>\
+    </div>\
     <div class="sm_footer">\
         <ul class="sm_footer_list">\
-          <li class=""><a href="https://github.com/aemartos/dana_font" target="_blank"><span class="fa fa-github"></span> GitHub</a></li>\
-          <li class="">&#8226;</li>\
-          <li class=""><a class="" href="https://www.linkedin.com/in/aemartos/" target="_blank"><span class="fa fa-linkedin-square" target="_blank"></span> LinkedIn</a></li>\
-          <li class="">&#8226;</li>\
-          <li class=""><a href="https://twitter.com/aemartos" target="_blank"><span class="fa fa-twitter" target="_blank"></span> Twitter</a></li>\
+          <li class="hide_media">&#8226;</li>\
+          <li class=""><a href="https://github.com/aemartos/dana_font" target="_blank"><span class="fa fa-github"></span></a></li>\
+          <!--<li class="">&#8226;</li>-->\
+          <li class=""><a href="https://www.behance.net/aemartos" target="_blank"><span class="fa fa-behance-square"></span></a></li>\
+          <!--<li class="">&#8226;</li>-->\
+          <li class=""><a class="" href="https://www.linkedin.com/in/aemartos/" target="_blank"><span class="fa fa-linkedin-square" target="_blank"></span></a></li>\
+          <!--<li class="">&#8226;</li>-->\
+          <li class=""><a href="https://twitter.com/aemartos" target="_blank"><span class="fa fa-twitter-square" target="_blank"></span></a></li>\
         </ul>\
     </div>\
-    <div class="copyright">\
-        <p class="copyright_text"><a class="footer_logo" href="index.html">A dana font &#8226;</a> Design with lots of love, glitter and alien blood, by <a href="http://www.anaestrada.es/" target="_blank">Ana Estrada</a> as a end-of-degree project. © 2017</p>\
-    </div>\
+    <a href="http://www.adg-fad.org/es/laus/proyecto/dana-20-font" target="_blank"><img class="gold_laus" src="img/laus_white.png" alt="Gold Laus Ana Estrada"></a>\
   ');
 
 footer.append(footer_content);

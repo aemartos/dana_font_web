@@ -12,6 +12,7 @@ header.main_header
     &.no_line
       border-bottom: 0
     nav.main_nav
+      position: relative
       width: 70%
       display: flex
       justify-content: space-between
@@ -24,6 +25,13 @@ header.main_header
         text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15)
         a
           color: white
+      img.gold_laus
+        position: absolute
+        top: 0em
+        left: 0.1em
+        //left: 5em
+        height: 4.5em
+        width: auto
       .main_menu
         a 
           color: rgba(255,255,255,.7)
@@ -93,18 +101,26 @@ header.main_header
     .nav_line
       nav.main_nav
         width: 80%
+        img.gold_laus
+          left: -3em
+          height: 3.6em
     .background_header
       .header_content
         width: 80%
         text-align: center
 
-@media (max-width: 320px)
+
+
+@media (max-width: 360px)
 
   header.main_header
     .nav_line
       nav.main_nav
         .main_logo
+          padding: 0
           font-size: 1.2em
+        img.gold_laus
+          left: -2.6em
 
 /*----------------------------RESPONSIVE MENU--------------------------*/      
 
