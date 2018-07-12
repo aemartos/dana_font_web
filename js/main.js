@@ -56,7 +56,7 @@ menuResponsive.append(menu_Responsive_content);
 var footer = $('.sticky_footer');
 var footer_content = $('\
     <div class="copyright">\
-        <p class="copyright_text"><a class="footer_logo" href="index.html">A dana font &#8226;</a> Design with lots of love, glitter and alien blood, by <a href="http://www.anaestrada.es/" target="_blank">Ana Estrada</a> as a end-of-degree project. © 2018</p>\
+        <p class="copyright_text"><a class="footer_logo" href="index.html">A dana font &#8226;</a> Designed with lots of love, glitter and alien blood, by <a href="http://www.anaestrada.es/" target="_blank">Ana Estrada</a> as a end-of-degree project. © 2018</p>\
     </div>\
     <div class="sm_footer">\
         <ul class="sm_footer_list">\
